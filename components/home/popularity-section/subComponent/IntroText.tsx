@@ -12,7 +12,7 @@ export default function IntroText() {
         width={60}
         height={60}
       />
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center relative loudAfterIcon leading-tight px-3">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[599] lg:font-bold text-center relative loudAfterIcon leading-tight px-3">
         We&apos;re here because more people across the economic spectrum deserve
         more secure and rewarding lives.
       </h1>

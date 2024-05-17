@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 export default function IntroText() {
   return (
     <div className="md:max-w-[450px] flex flex-col gap-4 sm:gap-7 px-5 md:px-0">
-      <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold">
+      <h1 className="text-2xl sm:text-3xl lg:text-5xl font-[590] lg:font-bold">
         More interest on your cash
       </h1>
       <p className="text-primary font-medium text-sm sm:text-base">

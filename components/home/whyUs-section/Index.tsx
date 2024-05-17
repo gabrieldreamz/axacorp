@@ -32,11 +32,11 @@ const cardData = [
   },
 ];
 
-export default function WhyUs() {
+export default function WhyUsSection() {
   return (
     <section className="flex justify-center my-32 md:my-60 px-7">
       <div className="border border-[#EAECF0] bg-[#f9f9f9] rounded-2xl flex flex-wrap md:flex-nowrap gap-14 sm:gap-7 px-10 lg:px-20 py-24 relative">
-        <span className="absolute -top-[1%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-nowrap font-bold bg-blue-500 rounded-3xl text-white py-3 px-5 -rotate-[5deg]">
+        <span className="absolute -top-[1%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-nowrap font-[590] lg:font-bold bg-blue-500 rounded-3xl text-white py-3 px-5 -rotate-[5deg]">
           Why Axa Coorperation?
         </span>
 
@@ -54,7 +54,7 @@ export default function WhyUs() {
                 height={60}
               />
             </span>
-            <h1 className="text-base sm:text-lg font-bold text-center">
+            <h1 className="text-base sm:text-lg font-[599] lg:font-bold text-center">
               {card.title}
             </h1>
             <p className="text-sm sm:text-base text-center text-primary font-medium">
