@@ -17,6 +17,7 @@ export default function ContactSection() {
           <CustomBtn
             title="Contact us"
             otherStyles="bg-black px-7 py-4 font-[590] w-40"
+            linkAddress="/contact-us"
           />
         </div>
 

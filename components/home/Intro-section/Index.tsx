@@ -4,7 +4,7 @@ import IntroText from "./subComponent/IntroText";
 
 export default function IntroSection() {
   return (
-    <main className="bgHeroImg overflow-hidden">
+    <main className="bgHeroImg overflow-hidden" id="intro_section">
       <IntroText />
       <IntroImage />
     </main>

@@ -14,16 +14,12 @@ export default function CustomBtn({
   linkAddress,
 }: PropsType) {
   return (
-    <button
-      className={`active:opacity-50 duration-300 transition-all text-white rounded-2xl ${otherStyles}`}
-    >
-      {isLink ? (
-        <Link className="w-full h-full" href={`${linkAddress}`}>
-          {title}
-        </Link>
-      ) : (
-        title
-      )}
-    </button>
+    <Link className="" href={`${linkAddress}`}>
+      <button
+        className={`active:opacity-50 duration-300 transition-all text-white rounded-2xl ${otherStyles}`}
+      >
+        {title}
+      </button>
+    </Link>
   );
 }
