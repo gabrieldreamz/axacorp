@@ -14,8 +14,12 @@ export default function QuickLinksSection() {
           <div>
             <h1 className="text-primary mb-4 text-sm font-medium">Product</h1>
             <ul className="font-medium text-sm sm:text-base">
-              <li className="mb-2">Privacy Policy</li>
-              <li>Terms of Use</li>
+              <li className="mb-2">
+                <Link href={"/privacy"}>Privacy Policy</Link>
+              </li>
+              <li>
+                <Link href={"/terms-of-use"}>Terms of Use</Link>
+              </li>
             </ul>
           </div>
 
