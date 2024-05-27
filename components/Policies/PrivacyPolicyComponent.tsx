@@ -3,13 +3,6 @@ import React from "react";
 import IntroTitle from "./subComponents/IntroTitle";
 import ListDisc from "./subComponents/ListDisc";
 
-const ListDesc = [
-  {
-    title: "Information We Collect",
-    desc: "We collect personal information that you provide directly to us",
-  },
-];
-
 export default function PrivacyPolicyComponent() {
   const titleDesc =
     "Your use of and access to our service are subject to the following terms; if you do not agree to all of the following, you may not user or access the service in any manner.";
