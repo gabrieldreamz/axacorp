@@ -1,12 +1,13 @@
-import { Suspense } from "react";
 import Form from "./Form";
+import RegisterIcon from "./RegisterIcon";
 
 export default function RegisterComponent() {
   return (
-    <Suspense>
-      <section className="flex justify-center items-center mb-10">
+      <section className="flex justify-evenly items-center mb-10">
         <Form />
+        <div className="hidden lg:block">
+          <RegisterIcon />
+        </div>
       </section>
-    </Suspense>
   );
 }
