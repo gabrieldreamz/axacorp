@@ -26,5 +26,5 @@ export default function Cards() {
         <span className="text-blue-500">hours saved</span>
       </div>
     </div>
-  );
+  )
 }
