@@ -106,7 +106,7 @@ const TestimonialsIcon = () => (
 export const linkData = [
   { link: "/", text: "Home", icon: <HomeIcon /> },
   { link: "#cash-interest_section", text: "Overview", icon: <OverviewIcon /> },
-  { link: "#why-us_section", text: "Features", icon: <FeaturesIcon /> },
+  { link: "/feature", text: "Features", icon: <FeaturesIcon /> },
   {
     link: "#testimonial_section",
     text: "Testimonials",
