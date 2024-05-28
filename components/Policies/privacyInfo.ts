@@ -109,10 +109,8 @@ export const ListDesc: ListDescTypes[] = [
     content:
       "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
     list: [
-      "axaCorp",
-      "22 Main Street, Coke, Lagos.",
-      "axacorp@gmail.com",
-      "+234 817 253 7568"
-    ]
+      "1 Bryant Pk 28th Floor, New York, NY 10036, United states      ",
+      "info@axacorp.com",
+    ],
   },
 ];
