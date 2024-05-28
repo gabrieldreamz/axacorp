@@ -1,5 +1,5 @@
 import { GiVibratingBall } from "react-icons/gi";
-import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { FiCheck } from "react-icons/fi";
 
 export default function Cards() {
   return (
@@ -18,39 +18,36 @@ export default function Cards() {
           <span className="text-4xl font-semibold">$120</span>
           <p className="text-base font-normal mt-[7px]">/per month</p>
         </div>
-        <button className="bg-black text-base font-normal text-white p-[10px] rounded-lg">
-          Get Started
-        </button>
-        <div className="w-full h-[20%] text-primary">
-          <hr />
-        </div>
         <div className="flex flex-col gap-[10px]">
           <p>Features</p>
           <div className="flex items-center gap-[10px]">
-            <IoIosCheckmarkCircleOutline size={"1.2rem"} />
+            <FiCheck className="text-cusGreen" size={"1.2rem"} />
             <p className="text-base font-normal text-primary">
               Advanced employee directory
             </p>
           </div>
           <div className="flex items-center gap-[10px]">
-            <IoIosCheckmarkCircleOutline size={"1.2rem"} />
+            <FiCheck className="text-cusGreen" size={"1.2rem"} />
             <p className="text-base font-normal text-primary">
               Project management
             </p>
           </div>
           <div className="flex items-center gap-[10px]">
-            <IoIosCheckmarkCircleOutline size={"1.2rem"} />
+            <FiCheck className="text-cusGreen" size={"1.2rem"} />
             <p className="text-base font-normal text-primary">
               Resource scheduling
             </p>
           </div>
           <div className="flex items-center gap-[10px]">
-            <IoIosCheckmarkCircleOutline size={"1.2rem"} />
+            <FiCheck className="text-cusGreen" size={"1.2rem"} />
             <p className="text-base font-normal text-primary">
               Version control
             </p>
           </div>
         </div>
+        <button className="bg-black text-base font-normal text-white p-[10px] rounded-lg">
+          Get Started
+        </button>
       </div>
     </div>
   );
