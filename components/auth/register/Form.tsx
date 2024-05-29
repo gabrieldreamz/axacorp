@@ -13,7 +13,7 @@ export default function Form() {
 
   return (
     <>
-      <section className="w-[95%] sm:w-[450px] mx-auto md:mx-0 mt-16 lg:mt-20 pb-10 md:pb-0">
+      <section className="w-[95%] sm:w-[450px] mx-auto md:mx-0 mt-7 lg:mt-20 pb-10 md:pb-0">
         <Welcome />
 
         <form className="flex flex-col gap-5 w-full bg-white customShadow border border-gray-200 rounded-md p-5 tracking-normal">
