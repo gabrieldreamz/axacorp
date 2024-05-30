@@ -4,7 +4,7 @@ import React from "react";
 import Lottie from "react-lottie";
 import aboutSvg from "@public/assets/SVG/about.json";
 
-export default function RegisterIcon() {
+export default function AboutUSIcon() {
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -14,8 +14,9 @@ export default function RegisterIcon() {
         },
     };
     return (
-        <>
-            <Lottie options={defaultOptions} height={500} width={500} />
-        </>
+        <div className="w-full h-[300px]">
+            <Lottie options={defaultOptions} height={300} width={'100%'} />
+        </div>
+
     );
 }
