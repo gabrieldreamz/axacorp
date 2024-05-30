@@ -1,6 +1,6 @@
 export interface ListDescTypes {
-  heading: string;
-  content: string | Content[];
+  heading?: string;
+  content?: string | Content[];
   list?: string[];
 }
 
