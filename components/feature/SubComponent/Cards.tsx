@@ -1,32 +1,49 @@
 import { GiVibratingBall } from "react-icons/gi";
 import { FiCheck } from "react-icons/fi";
+import { IPlans } from "../plans";
 
-export default function Cards() {
+export default function Cards({planType, percentageBonus, minimumAmount, maximumAmount, duration} : IPlans) {
+  let plan = {
+    Duration: duration,
+    "Mininmum Amount": minimumAmount,
+    "Maximum Amount": maximumAmount,
+    "Referral Bonus": "5%",
+  }
   return (
-    <div className="flex mt-[20px] w-full justify-center items-center">
-      <div className="border-2 border-white shadow-lg flex gap-[30px] flex-col justify-start py-[20px] p-4 item-center w-[90%] sm:w-[50%] xl:w-[30%]">
-        <div className="flex justify-center w-[30px] h-[30px] shadow-lg border items-center rounded-full bg-black text-white px-[5px]">
-          <GiVibratingBall size={"2rem"} />
+    <>
+      <div className="border-2 bg-white border-white shadow-sm gap-[30px] p-8 w-[90%] sm:w-[50%] xl:w-[30%] lg:w-[300px] rounded-lg mt-8">
+        <div className="">
+          <div className="flex justify-start w-[30px] h-[30px] shadow-lg border items-center rounded-full bg-black text-white px-[4px]">
+            <GiVibratingBall size={"4rem"} />
+          </div>
         </div>
-        <div className="flex item-center gap-[10px] flex-col">
-          <p className="text-xl font-semibold">Enterprise</p>
-          <p className="text-base font-normal text-primary">
-            For large teams and corporations.
-          </p>
+        <div>
+          <p className="font-semibold text-3xl my-4">{planType}</p>
         </div>
-        <div className="flex items-center gap-1">
-          <span className="text-4xl font-semibold">$120</span>
-          <p className="text-base font-normal mt-[7px]">/per month</p>
+        <div className="my-4">
+          <h1 className="font-normal text-primary text-2xl">
+            {percentageBonus}
+          </h1>
         </div>
-        <div className="flex flex-col gap-[10px]">
-          <p>Features</p>
-          <div className="flex items-center gap-[10px]">
+        <div className="">
+          {Object.entries(plan).map(([key, value]) => {
+            return (
+              <div className="flex items-center gap-[10px] my-4" key={value}>
+                <FiCheck className="text-cusGreen" size={"1.2rem"} />
+                <p className="text-base font-normal text-primary">
+                  {key}: {value}
+                </p>
+              </div>
+            );
+          })}
+          <div className="flex items-center gap-[10px] my-4">
             <FiCheck className="text-cusGreen" size={"1.2rem"} />
             <p className="text-base font-normal text-primary">
-              Advanced employee directory
+              Capital is returned after accrual
             </p>
           </div>
-          <div className="flex items-center gap-[10px]">
+
+          {/* <div className="flex items-center gap-[10px]">
             <FiCheck className="text-cusGreen" size={"1.2rem"} />
             <p className="text-base font-normal text-primary">
               Project management
@@ -43,12 +60,12 @@ export default function Cards() {
             <p className="text-base font-normal text-primary">
               Version control
             </p>
-          </div>
+          </div> */}
         </div>
-        <button className="bg-black text-base font-normal text-white p-[10px] rounded-lg">
+        <button className="bg-black text-base font-normal text-white p-[10px] rounded-lg w-full mt-4">
           Get Started
         </button>
       </div>
-    </div>
+    </>
   );
 }
