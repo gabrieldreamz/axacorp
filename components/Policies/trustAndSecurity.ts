@@ -63,7 +63,10 @@ export const trustAndSecurity: ListDescTypes[] = [
         subheading: "Contact Us",
         subcontent:
           "If you have any questions or concerns about our trust and security practices, please contact us at:",
-        sublist: ["Address", "Email", "Phone number"]
+        sublist: [
+          "1 Bryant Pk 28th Floor, New York, NY 10036, United states",
+          "contact@axacorp.com",
+        ],
       },
     ],
   },

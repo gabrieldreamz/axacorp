@@ -9,8 +9,7 @@ export default function Display({
   displayList,
 }: {
   tabsName: string;
-  displayList: ListDescTypes[] &
-    { additionaltext?: string }[];
+  displayList: ListDescTypes[] & { additionaltext?: string }[];
 }) {
   return (
     <section className="px-5 xl:px-0 flex flex-col lg:flex-row gap-7 mx-auto max-w-6xl md:mt-16">
@@ -42,9 +41,6 @@ export default function Display({
           </li>
           <li>
             <Link href="/trust-and-security">Trust and Security</Link>
-          </li>
-          <li>
-            <Link href="/tax-statement">Tax Statement</Link>
           </li>
         </ul>
       </div>

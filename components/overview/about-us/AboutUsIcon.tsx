@@ -1,22 +1,21 @@
-"use client"
+"use client";
 
 import React from "react";
 import Lottie from "react-lottie";
-import aboutSvg from "@public/assets/SVG/about.json";
+import aboutSVG from "@public/assets/SVG/aboutSVG.json";
 
 export default function AboutUSIcon() {
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: aboutSvg,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice",
-        },
-    };
-    return (
-        <div className="w-full h-[300px]">
-            <Lottie options={defaultOptions} height={300} width={'100%'} />
-        </div>
-
-    );
+  const defaultOptions = {
+    loop: false,
+    autoplay: true,
+    animationData: aboutSVG,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  return (
+    <div className="w-full md:w-[60%] mx-auto">
+      <Lottie options={defaultOptions} width={"100%"} />
+    </div>
+  );
 }

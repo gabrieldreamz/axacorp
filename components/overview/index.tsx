@@ -10,5 +10,5 @@ export default function OverviewComponent() {
       <WhyComponent />
       <OurWorkComponent />
     </main>
-  )
+  );
 }
