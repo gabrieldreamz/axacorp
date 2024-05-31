@@ -1,11 +1,34 @@
+import CustomBtn from "@UI/CustomBtn";
 import AboutTextSection from "../about-us/SubComponent/AboutTextSection";
-import { ImPower } from "react-icons/im";
-import { FaArrowRightLong } from "react-icons/fa6";
-
+import OurWorkLottie from "./OurWorkLottie";
 export default function OurWorkComponent() {
   return (
-    <section className="flex flex-col max-w-6xl mx-auto px-5 mt-14 sm:mt-20">
-      <div className="lg:flex w-full">
+    <section className="flex flex-col max-w-6xl mx-auto px-5">
+      <div className="relative py-8 mt-10 sm:mt-20">
+        <div className="relative bg-LoginRGB w-full flex flex-col md:flex-row gap-10 md:gap-0 p-10 md:p-20 md:items-center rounded-3xl max-w-6xl mx-auto">
+          <div className="flex flex-col gap-7 max-w-md lg:max-w-xl">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[590] md:font-bold text-[#404556]">
+              Have more questions?
+            </h1>
+            <p className="text-primary">
+              Experience a holistic approach to financial planning such as
+              retirement planning, Capital Raising, risk management, estate
+              planning, and tax optimization.
+            </p>
+            <CustomBtn
+              title="Contact us"
+              otherStyles="bg-black px-7 py-4 font-[590] w-40"
+              linkAddress="/contact-us"
+            />
+          </div>
+
+          <div>
+            <OurWorkLottie />
+          </div>
+        </div>
+      </div>
+
+      <div className="lg:flex w-full mt-10 sm:mt-20">
         <div className="flex lg:w-[50%] flex-col text-center lg:text-start">
           <p className="text-3xl sm:text-5xl font-medium lg:mt-2">Our Work</p>
         </div>
@@ -18,24 +41,6 @@ export default function OurWorkComponent() {
       </div>
 
       {/*Our works card*/}
-
-      <div className="border border-gray-200 p-3 rounded-md flex gap-x-4 items-center mt-10">
-        <div className="my-3 border-r border-gray-200 px-7 mr-4">
-          <ImPower className="text-2xl text-yellow-500" />
-        </div>
-
-        <div className="flex items-center justify-between flex-1">
-          <div className="w-full">
-            <h1 className="text-lg font-medium">Fast Assistance</h1>
-            <p className="text-sm text-primary max-w-4xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              blanditiis recusandae iure dolorem enim illum voluptates corporis,
-              inventore esse pariatur omnis dolores impedit, quisquam vero
-              error, similique provident eos repellendus?
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
