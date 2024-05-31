@@ -7,7 +7,7 @@ export default function OurWorkComponent() {
       <div className="relative py-8 mt-10 sm:mt-20">
         <div className="relative bg-LoginRGB w-full flex flex-col md:flex-row gap-10 md:gap-0 p-10 md:p-20 md:items-center rounded-3xl max-w-6xl mx-auto">
           <div className="flex flex-col gap-7 max-w-md lg:max-w-xl">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[590] md:font-bold text-[#404556]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[590] text-[#404556]">
               Unmatched Investment Excellence?
             </h1>
             <p className="text-primary">
@@ -30,7 +30,7 @@ export default function OurWorkComponent() {
 
       <div className="lg:flex w-full mt-10 sm:mt-20">
         <div className="flex lg:w-[50%] flex-col text-center lg:text-start">
-          <p className="text-3xl sm:text-5xl font-medium lg:mt-2">Our Work</p>
+          <p className="text-3xl sm:text-5xl font-[590] lg:mt-2">Our Work</p>
         </div>
         <div className="lg:w-[50%] text-center mt-5 lg:mt-0">
           <AboutTextSection
