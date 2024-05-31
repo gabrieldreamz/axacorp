@@ -8,18 +8,18 @@ export default function OurWorkComponent() {
         <div className="relative bg-LoginRGB w-full flex flex-col md:flex-row gap-10 md:gap-0 p-10 md:p-20 md:items-center rounded-3xl max-w-6xl mx-auto">
           <div className="flex flex-col gap-7 max-w-md lg:max-w-xl">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-[590] md:font-bold text-[#404556]">
-              Have more questions?
+              Unmatched Investment Excellence?
             </h1>
             <p className="text-primary">
-              Experience a holistic approach to financial planning such as
-              retirement planning, Capital Raising, risk management, estate
-              planning, and tax optimization.
+              We are who we say we are: leaders in investment excellence,
+              defined by our refined approach and expert guidance in the
+              financial sector.
             </p>
-            <CustomBtn
+            {/* <CustomBtn
               title="Contact us"
               otherStyles="bg-black px-7 py-4 font-[590] w-40"
               linkAddress="/contact-us"
-            />
+            /> */}
           </div>
 
           <div>
