@@ -7,10 +7,13 @@ export default function Navlinks() {
       {linkData.map((item) => (
         <li
           key={item.text}
-          className="flex items-center gap-2 px-5 py-2 rounded-2xl font-semibold hover:bg-blue-50 hover:text-[#1570ef] active:opacity-50 transition-all duration-300"
+          className="px-5 py-2 rounded-2xl font-semibold hover:bg-blue-50 hover:text-[#1570ef] active:opacity-50 transition-all duration-300"
         >
-          {item.icon}
-          <Link className="hover:opacity-95 tracking-wide" href={item.link}>
+          <Link
+            className="hover:opacity-95 tracking-wide flex items-center gap-2"
+            href={item.link}
+          >
+            {item.icon}
             {item.text}
           </Link>
         </li>

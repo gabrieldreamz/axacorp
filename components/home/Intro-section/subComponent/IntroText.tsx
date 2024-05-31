@@ -31,6 +31,7 @@ export default function IntroText() {
       <div className="flex justify-center">
         <CustomBtn
           title="Create Account"
+          linkAddress="/auth/signup"
           otherStyles="bg-blue-500 px-7 font-[590] lg:font-bold text-sm lg:text-base py-4 mt-10 hover:bg-[#9b8bff]"
         />
       </div>

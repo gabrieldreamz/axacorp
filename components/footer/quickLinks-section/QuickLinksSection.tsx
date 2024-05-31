@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function QuickLinksSection() {
   return (
-    <section>
-      <div className="max-w-6xl mx-auto p-8 lg:flex flex-col md:flex-row items-center justify-between gap-10 mb-7">
+    <section className="pb-7">
+      <div className="max-w-6xl mx-auto p-8 lg:flex flex-col md:flex-row items-center justify-between gap-10">
         <Link href="/" className="TapHighlight">
           <p className="font-[590] lg:font-bold text-lg  text-black text-center mb-10 sm:mb-0">
             AxaCorp
@@ -28,16 +28,32 @@ export default function QuickLinksSection() {
               Credibility
             </h1>
             <ul className="font-medium text-sm sm:text-base">
-              <li className="mb-2">FinRa.org</li>
-              <li>Tadvisorcheck.com</li>
+              <li className="mb-2">
+                <Link target="blank" href={"https://www.finra.org/"}>
+                  FinRa.org
+                </Link>
+              </li>
+              <li>
+                <Link target="blank" href={"http://tadvisorcheck.com/"}>
+                  Tadvisorcheck.com
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div className="mt-8 lg:mt-0">
             <h1 className="text-primary mb-4 text-sm font-medium">Resources</h1>
             <ul className="font-medium text-sm sm:text-base">
-              <li className="mb-2">Forbes.com</li>
-              <li>Barrons.com</li>
+              <li className="mb-2">
+                <Link target="blank" href={"https://www.forbes.com/"}>
+                  Forbes.com
+                </Link>
+              </li>
+              <li>
+                <Link target="blank" href={"https://www.barrons.com/"}>
+                  Barrons.com
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

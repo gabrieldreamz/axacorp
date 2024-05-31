@@ -34,13 +34,12 @@ export default function DropDownMenu({ setToggleMenu }: DropDown) {
           animate={animationData(null).animate}
           transition={animationData(i).transition}
           exit={{ translateX: -30, opacity: 0.7 }}
-          className="flex items-center gap-2"
         >
-          {item.icon}
           <Link
-            className="tracking-wide text-dark TapHighlight block"
+            className="tracking-wide text-dark TapHighligh flex items-center gap-2"
             href={item.link}
           >
+            {item.icon}
             {item.text}
           </Link>
         </motion.li>

@@ -28,7 +28,7 @@ export const termsOfUse: ListDescTypes[] = [
   {
     heading: "Intellectual Property",
     content:
-      "All content on our website, including text, graphics, logos, and software, is the property of [Your Investment Company] or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.",
+      "All content on our website, including text, graphics, logos, and software, is the property of AxaCorp or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.",
   },
   {
     heading: "Third-Party Links",
@@ -43,17 +43,12 @@ export const termsOfUse: ListDescTypes[] = [
   {
     heading: "Limitation of Liability",
     content:
-      "To the maximum extent permitted by law, [Your Investment Company] will not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of our website or services, even if we have been advised of the possibility of such damages.",
+      "To the maximum extent permitted by law, AxaCorp will not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of our website or services, even if we have been advised of the possibility of such damages.",
   },
   {
     heading: "Indemnification",
     content:
-      "You agree to indemnify and hold harmless [Your Investment Company], its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including legal fees, arising out of or in any way connected with your use of our website or services.",
-  },
-  {
-    heading: "Governing Law",
-    content:
-      "These Terms of Use are governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of laws principles. Any disputes arising under these terms shall be resolved exclusively by the courts located in [Your Jurisdiction].",
+      "You agree to indemnify and hold harmless AxaCorp, its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including legal fees, arising out of or in any way connected with your use of our website or services.",
   },
   {
     heading: "Changes to Terms",
@@ -63,10 +58,10 @@ export const termsOfUse: ListDescTypes[] = [
   {
     heading: "Contact Us",
     content:
-      "If you have any questions or concerns about these Terms of Use, please contact us at: [Your Investment Company], [Address], [Email], [Phone Number]",
+      "If you have any questions or concerns about these Terms of Use, please contact us at: contact@axacorp.com, 1 Bryant Pk 28th Floor, New York, NY 10036, United states",
   },
   {
     heading: "Last Updated",
-    content: "[Date]",
+    content: "April 23, 2024",
   },
 ];

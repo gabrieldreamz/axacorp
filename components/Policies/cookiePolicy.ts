@@ -1,7 +1,6 @@
 import { ListDescTypes } from "./privacyInfo";
 
-export const cookiePolicy: ListDescTypes[] &
-  { additionaltext?: string }[] = [
+export const cookiePolicy: ListDescTypes[] & { additionaltext?: string }[] = [
   {
     heading: "Introduction",
     content:
@@ -36,7 +35,7 @@ export const cookiePolicy: ListDescTypes[] &
       "We may also use third-party cookies from service providers such as analytics and advertising partners. These cookies are managed by the third parties and are used for the purposes described above.",
   },
   {
-    heading: "Your Choicces Regarding Cookies",
+    heading: "Your Choices Regarding Cookies",
     content:
       "You can manage your cookie preferences through your browser settings. Most browsers allow you to:",
     list: [
@@ -49,7 +48,7 @@ export const cookiePolicy: ListDescTypes[] &
       "Please note that blocking or deleting cookies may impact your experience on our website and limit the functionality available to you.",
   },
   {
-    heading: "Changes to This Cokkie Policy",
+    heading: "Changes to This Cookie Policy",
     content:
       "We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting the new policy on our website and updating the “Last Updated” date.",
   },
@@ -57,10 +56,13 @@ export const cookiePolicy: ListDescTypes[] &
     heading: "Contact Us",
     content:
       "If you have any questions or concerns about this Cookie Policy, please contact us at:",
-    list: ["Address", "Email", "Phone number"],
+    list: [
+      "1 Bryant Pk 28th Floor, New York, NY 10036, United states",
+      "contact@axacorp.com",
+    ],
   },
   {
     heading: "Last Updated",
-    content: "Date"
-  }
+    content: "April 23, 2024",
+  },
 ];

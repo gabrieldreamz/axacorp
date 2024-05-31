@@ -108,7 +108,7 @@ export const linkData = [
   { link: "/overview", text: "Overview", icon: <OverviewIcon /> },
   { link: "/feature", text: "Features", icon: <FeaturesIcon /> },
   {
-    link: "#",
+    link: "/contact-us",
     text: "Contact Us",
     icon: <TestimonialsIcon />,
     hr: true,
