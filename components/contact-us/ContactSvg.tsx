@@ -1,24 +1,23 @@
-"use client"
+"use client";
 
-import React from 'react'
-import Lottie from 'react-lottie'
-import contactSvg from '@public/assets/SVG/contact.json'
-
+import React from "react";
+import Lottie from "react-lottie";
+import contactSvg from "@public/assets/SVG/contact.json";
 
 function ContactSvg() {
-    const defaultOptions = {
-      loop: true,
-      autoplay: true,
-      animationData: contactSvg,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    };
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: contactSvg,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
-    <div className='bg-white rounded-xl'>
-        <Lottie options={defaultOptions} />
+    <div className="bg-white rounded-xl overflow-hidden">
+      <Lottie options={defaultOptions} />
     </div>
-  )
+  );
 }
 
-export default ContactSvg
+export default ContactSvg;

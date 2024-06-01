@@ -24,7 +24,7 @@ export default function ContactSection() {
         <div className="lg:my-auto flex flex-col gap-4 text-sm sm:text-base font-medium">
           <span className="flex items-center gap-2">
             <CiMail className="text-xl flex-shrink-0" />
-            info@axacorp.com
+            contact@axacorp.com
           </span>
           <span className="flex items-center gap-2 ">
             <CiLocationOn className="text-xl flex-shrink-0" />1 Bryant Pk 28th
