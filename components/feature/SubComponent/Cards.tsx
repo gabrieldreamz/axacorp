@@ -1,6 +1,7 @@
 import { GiVibratingBall } from "react-icons/gi";
 import { FiCheck } from "react-icons/fi";
 import { IPlans } from "../plans";
+import Link from "next/link";
 
 export default function Cards({
   planType,
@@ -65,9 +66,11 @@ export default function Cards({
             </p>
           </div> */}
       </div>
-      <button className="bg-blue-500 text-base font-medium text-white p-[10px] rounded-lg w-full mt-4">
-        Get Started
-      </button>
+      <Link href={"/auth/signup"}>
+        <button className="bg-blue-500 text-base font-medium text-white p-[10px] rounded-lg w-full mt-4">
+          Get Started
+        </button>
+      </Link>
     </div>
   );
 }
