@@ -1,6 +1,7 @@
 import { GiVibratingBall } from "react-icons/gi";
 import { FiCheck } from "react-icons/fi";
 import { IPlans } from "../plans";
+import Link from "next/link";
 
 export default function Cards({
   planType,
@@ -23,7 +24,7 @@ export default function Cards({
         </div>
       </div>
       <div>
-        <p className="font-medium text-xl my-4">{planType}</p>
+        <p className="font-[590] text-xl my-4">{planType}</p>
       </div>
       <div className="my-4">
         <h1 className="font-normal text-primary text-2xl">{percentageBonus}</h1>
@@ -34,7 +35,7 @@ export default function Cards({
             <div className="flex items-center gap-[10px] my-4" key={value}>
               <FiCheck className="text-cusGreen" size={"1.2rem"} />
               <p className="font-normal text-primary">
-                {key}: <span className="font-medium">{value}</span>
+                {key}: <span>{value}</span>
               </p>
             </div>
           );
@@ -65,9 +66,11 @@ export default function Cards({
             </p>
           </div> */}
       </div>
-      <button className="bg-blue-500 text-base font-medium text-white p-[10px] rounded-lg w-full mt-4">
-        Get Started
-      </button>
+      <Link href={"/auth/signup"}>
+        <button className="bg-blue-500 text-base font-medium text-white p-[10px] rounded-lg w-full mt-4">
+          Get Started
+        </button>
+      </Link>
     </div>
   );
 }

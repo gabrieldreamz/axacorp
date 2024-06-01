@@ -1,4 +1,4 @@
-import RegisterIcon from "../register/RegisterIcon";
+import AuthLottie from "../register/AuthLottie";
 import Form from "./Form";
 
 export default function LogInComponent() {
@@ -6,7 +6,7 @@ export default function LogInComponent() {
     <section className="flex justify-evenly items-center">
       <Form />
       <div className="hidden lg:block">
-        <RegisterIcon />
+        <AuthLottie />
       </div>
     </section>
   );

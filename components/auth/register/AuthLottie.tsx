@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
 import React from "react";
 import Lottie from "react-lottie";
-import registerSvg from "@public/assets/SVG/register.json";
+import registerSvg from "@public/assets/SVG/SignUp.json";
 
-export default function RegisterIcon() {
+export default function AuthLottie() {
   const defaultOptions = {
-    loop: true,
+    loop: false,
     autoplay: true,
     animationData: registerSvg,
     rendererSettings: {
