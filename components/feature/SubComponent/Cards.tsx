@@ -16,7 +16,7 @@ export default function Cards({
     "Referral Bonus": "5%",
   };
   return (
-    <div className="border-2 bg-white border-white shadow-sm gap-[30px] p-8 w-[90%] sm:w-[50%] xl:w-[30%] lg:w-[300px] rounded-lg mt-8">
+    <div className="border bg-white border-gray-100 gap-5 sm:gap-[30px] p-8 w-full sm:w-[300px] rounded-lg mt-8">
       <div className="">
         <div className="flex justify-start w-[30px] h-[30px] shadow-lg border items-center rounded-full bg-black text-white px-[4px]">
           <GiVibratingBall size={"4rem"} />
@@ -65,7 +65,7 @@ export default function Cards({
             </p>
           </div> */}
       </div>
-      <button className="bg-black text-base font-medium text-white p-[10px] rounded-lg w-full mt-4">
+      <button className="bg-blue-500 text-base font-medium text-white p-[10px] rounded-lg w-full mt-4">
         Get Started
       </button>
     </div>
