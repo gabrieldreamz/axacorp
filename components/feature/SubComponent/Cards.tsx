@@ -45,25 +45,6 @@ export default function Cards({
             Capital is returned after accrual
           </p>
         </div>
-
-        {/* <div className="flex items-center gap-[10px]">
-            <FiCheck className="text-cusGreen" size={"1.2rem"} />
-            <p className="text-base font-normal text-primary">
-              Project management
-            </p>
-          </div>
-          <div className="flex items-center gap-[10px]">
-            <FiCheck className="text-cusGreen" size={"1.2rem"} />
-            <p className="text-base font-normal text-primary">
-              Resource scheduling
-            </p>
-          </div>
-          <div className="flex items-center gap-[10px]">
-            <FiCheck className="text-cusGreen" size={"1.2rem"} />
-            <p className="text-base font-normal text-primary">
-              Version control
-            </p>
-          </div> */}
       </div>
       <button className="bg-black text-base font-medium text-white p-[10px] rounded-lg w-full mt-4">
         Get Started
