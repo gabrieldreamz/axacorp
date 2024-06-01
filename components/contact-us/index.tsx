@@ -1,5 +1,6 @@
-"use client"
-import { FaEnvelope, FaPhone } from "react-icons/fa";
+"use client";
+import { IoIosMail } from "react-icons/io";
+import { MdLocationPin } from "react-icons/md";
 import ContactForm from "./ContactForm";
 import ContactSvg from "./ContactSvg";
 import ContactCard from "./ContactCard";
@@ -7,30 +8,35 @@ import ContactCard from "./ContactCard";
 export default function ContactusComponent() {
   const contactArr = [
     {
-      icon: <FaEnvelope />,
+      icon: <IoIosMail />,
       contactType: "Email",
-      contact: "axacorp@gmail.com",
+      contact: "contact@axacorp.com",
     },
     {
-      icon: <FaPhone />,
-      contactType: "Phone Number",
-      contact: "234567890123",
+      icon: <MdLocationPin />,
+      contactType: "Address",
+      contact: "1 Bryant Pk 28th Floor, New York, NY 10036, United states",
     },
   ];
   return (
-    <div className="lg:flex w-[95%] lg:w-[90%] mx-auto gap-6">
+    <div className="sm:flex max-w-5xl mx-auto gap-6 sm:gap-3 lg:gap-6 mt-10 lg:mt-16">
       <ContactForm />
-      <div className="my-8">
+      <div className="mt-8 sm:my-0 px-5 lg:px-0 flex flex-col justify-center gap-5 lg:gap-0 lg:justify-between">
         <ContactSvg />
 
-        <div className="md:w-full justify-evenly md:flex lg:block mx-auto lg:w-full rounded-md bg-white my-8 px-4 py-6">
+        <div className="mx-auto rounded-xl bg-white flex flex-col gap-y-4 w-full p-4 mt-5 sm:mt-0">
           {contactArr.map((contact, id) => {
             return (
-              <ContactCard icon={contact.icon} contact={contact.contact} contactType={contact.contactType} key={id}/>
-            )
+              <ContactCard
+                icon={contact.icon}
+                contact={contact.contact}
+                contactType={contact.contactType}
+                key={id}
+              />
+            );
           })}
         </div>
       </div>
     </div>
-  )
+  );
 }

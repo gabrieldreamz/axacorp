@@ -18,10 +18,10 @@ export default function IntroSectionCard() {
         </div>
 
         <div className="mt-7">
-          <h1 className="text-xl md:text-2xl font-[590] md:font-medium">
+          <h1 className="text-lg md:text-2xl font-[590] md:font-medium">
             Innovative Investment Plans
           </h1>
-          <p className="text-primary mt-2">
+          <p className="text-primary text-sm mt-2">
             Our Innovative Investment Plans use cutting-edge strategies and
             expert insights to maximize your returns
           </p>
@@ -40,10 +40,10 @@ export default function IntroSectionCard() {
         </div>
 
         <div className="mt-7">
-          <h1 className="text-xl md:text-2xl font-[590] md:font-medium">
+          <h1 className="text-lg md:text-2xl font-[590] md:font-medium">
             Auto planning and excution
           </h1>
-          <p className="text-primary mt-2">
+          <p className="text-primary text-sm mt-2">
             Experience the power of automated planning and execution. Our
             advanced solutions ensure optimal growth and peace of mind
           </p>
