@@ -34,11 +34,11 @@ export default function Profile() {
 
     return (
         <div ref={profileRef} className="Profile flex flex-col relative gap-[10px] justify-center items-center" onClick={handleProfileClick}>
-            <div className="flex items-center gap-[10px] cursor-pointer">
+            <div className="flex items-center md:gap-[10px] cursor-pointer">
                 <div className="w-[35px] flex justify-center text-primary items-center overflow-hidden rounded-full h-[35px]">
                     <FaUserCircle className="object-cover w-full h-full" />
                 </div>
-                <div className="flex font-semibold text-sm flex-col">
+                <div className="User hidden md:flex font-semibold text-sm flex-col">
                     <span>Dummy User</span>
                     <p>Lorem Ipsum</p>
                 </div>
@@ -49,12 +49,13 @@ export default function Profile() {
             {open && (
                 <div
                     ref={menuRef}
-                    className="bg-white absolute top-[60px] p-[10px] w-[100px] shadow-lg"
+                    className="bg-white absolute top-[60px] p-[10px] w-[150px] sm:w-[200px] shadow-lg"
                 >
                     <ul>
-                        <li><Link href="/profile">Profile</Link></li>
-                        <li><Link href="/settings">Settings</Link></li>
-                        <li><Link href="/logout">Logout</Link></li>
+                        <li className='hover:bg-primary font-semibold text-sm hover:text-white p-2'><Link href="/withdraw">Withdraw</Link></li>
+                        <li className='hover:bg-primary font-semibold text-sm hover:text-white p-2'><Link href="/deposit">Deposit</Link></li>
+                        <li className='hover:bg-primary font-semibold text-sm hover:text-white p-2'><Link href="/deposit">Edit profile</Link></li>
+                        <li className='hover:bg-primary font-semibold text-sm hover:text-white p-2'><Link href="/logout">Logout</Link></li>
                     </ul>
                 </div>
             )}
