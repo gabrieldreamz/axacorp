@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content="#3b82fb" />
       </head>
       <body className={`${PlusJakartaSans.className}`}>{children}</body>
     </html>
